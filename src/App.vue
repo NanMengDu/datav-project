@@ -1,28 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <dv-loading>Loading...</dv-loading>
+    <div class="dv">
+      <dv-border-box-1></dv-border-box-1>
+    </div>
+    <dv-border-box-8></dv-border-box-8>
+    <div class="dv">
+      <dv-border-box-12></dv-border-box-12>
+    </div>
+    <div class="dv">
+      <dv-border-box-13></dv-border-box-13>
+    </div>
+    <div class="dv">
+      <dv-decoration-1 :color="['red', 'green']" />
+    </div>
+    <div class="dv">
+      <dv-decoration-2/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 90vw;
+}
+#app .dv-border-box-8 {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+.dv .dv-border-box-1,
+.dv .dv-border-box-12,
+.dv .dv-border-box-13,
+.dv .dv-decoration-2 {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
 }
 </style>
