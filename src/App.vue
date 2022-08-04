@@ -25,14 +25,17 @@
         </template>
       </el-table-column>
     </chris-el-table>
+
+    <myChart></myChart>
   </div>
 </template>
 
 <script>
 import ChrisElTable from "./components/chris-el-table.vue";
+import myChart from './components/echarts.vue'
 export default {
   name: "App",
-  components: { ChrisElTable },
+  components: { ChrisElTable,myChart },
   data() {
     return {
       tableTitle: [
