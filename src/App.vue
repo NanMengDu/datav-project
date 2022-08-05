@@ -25,17 +25,19 @@
         </template>
       </el-table-column>
     </chris-el-table>
-
+      <!-- 图表 -->
     <myChart></myChart>
+    <my-swiper></my-swiper>
   </div>
 </template>
 
 <script>
 import ChrisElTable from "./components/chris-el-table.vue";
 import myChart from './components/echarts.vue'
+import mySwiper from './components/myswiper.vue'
 export default {
   name: "App",
-  components: { ChrisElTable,myChart },
+  components: { ChrisElTable,myChart,mySwiper },
   data() {
     return {
       tableTitle: [
